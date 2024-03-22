@@ -1,0 +1,47 @@
+<header class="header">Assessment</header>
+<hr class="rule">
+
+<h1>
+    {{assessment.AssessmentName}}
+</h1>
+<p>
+    Module: {{assessment.ModuleName}}
+</p>
+<p>
+    Due: {{assessment.DueDate}}
+</p>
+<p>
+    Description: {{assessment.AssessmentDesc}}
+</p>
+
+<h2>
+Questions
+</h2>
+<div id='content' class="container mt-3 mb-5">
+</div>
+
+
+<script>
+document.getElementById('content').innerHTML = `{{{assessment.AssessmentContent}}}`;
+</script>
+
+<h3> Submit Answer </h3>
+<form class="" method="POST" action="{{{req.params.AssessmentsID}}}/submit-assessment">
+    <div class="form-group">
+    <textarea style="height: 50vh; overflow: scroll" class="form-control" name="Submission" cols=100%></textarea>
+
+    </div>
+    
+    <input class="btn btn-primary" type="submit" />
+</form>
+
+
+<!--sidebar nav on this page-->
+<script>
+var x = document.getElementById("navbar");
+x.style.display = "none";
+var x = document.getElementById("menubtn");
+x.style.display = "block";
+</script>
+
+</div>

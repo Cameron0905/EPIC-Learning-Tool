@@ -1,0 +1,25 @@
+<header class="header">Assessments</header>
+<hr class="rule">
+
+<div class="d-flex flex-wrap">
+  {{#each assessments}}
+    <div class="card m-3" style="width: 22rem;">
+      <div class="card-body">
+        <h4 class="card-text">{{this.ModuleName}}</h5>
+        <h5 class="card-title mb-5">{{this.AssessmentName}}</h5>
+        <p class="card-text">Due date: {{this.DueDate}}</p>
+        <p class="card-text">{{this.AssessmentDesc}}</p>
+        <a href="assessments/{{this.AssesmentsID}}" class="btn btn-primary">Go</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
+<!--sidebar nav on this page-->
+<script>
+var x = document.getElementById("navbar");
+x.style.display = "none";
+var x = document.getElementById("menubtn");
+x.style.display = "block";
+</script>

@@ -1,0 +1,39 @@
+
+<div class="d-flex flex-wrap">
+  {{#each modules}}
+    <div class="card m-3" style="width: 18rem;">
+      <img class="card-img-top" src="/img/cat.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{this.ModuleName}}</h5>
+        <p class="card-text">Module description</p>
+        <a href="/staff/Lecturer/{{this.moduleID}}" class="btn btn-primary">Access this Module</a>
+
+      </div>
+    </div>
+
+
+  {{/each}}
+</div>
+<h4>{{message}} </h4>
+
+<!--sidebar nav on this page-->
+<script>
+var x = document.getElementById("navbar");
+x.style.display = "none";
+var x = document.getElementById("menubtn");
+x.style.display = "block";
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

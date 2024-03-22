@@ -1,0 +1,21 @@
+<header class="header">Modules</header>
+<hr class="rule">
+
+<h2>
+  {{lessons.moduleName}}
+</h2>
+<ul class="list-group">
+  {{#each lessons}}
+    <li class="list-group-item"><a href="{{this.moduleID}}/lessons/{{this.lessonID}}">{{this.LessonName}}</a> </li>
+  {{/each}}
+
+</ul>
+<!--sidebar nav on this page-->
+<script>
+var x = document.getElementById("navbar");
+x.style.display = "none";
+var x = document.getElementById("menubtn");
+x.style.display = "block";
+</script>
+
+</div>

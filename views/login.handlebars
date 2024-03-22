@@ -1,0 +1,49 @@
+
+
+<style >
+.container {
+      position: relative;
+      margin: auto;
+      height: 500px;
+      width: 800px;
+      background-color: white;
+      display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   opacity: 0.8;
+   color: white;
+   text-align: center;
+}
+   
+</style>
+
+
+<body style="background-image: url('/img/background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
+    <div class="container">
+        <form method="POST" action="/login/submit-login">
+            <p style="font-size: 36px; text-align: center; margin-bottom: 30px"> Sign In </p>
+            <input name="Email" type="text" class="form-control"  placeholder="Email" style=" position: relative; width: 400px; margin: auto;"><br><br>
+            <input name="Pswd" type="password" class="form-control" placeholder="Password" style=" position: relative; width: 400px; margin: auto;"><br><br>
+            <button type="submit" class="btn btn-primary" style="margin: auto 44%;">Submit</button>
+            <h4>{{message}} </h4>
+          </form> 
+      </div>
+</body>
+
+  <div class="footer">
+    <p>
+    For dev purposes </br>
+    Student logins - username: student, password: student</br>
+    Admin logins - username: admin, password: admin</br>
+    Staff login - username: john.mace@newcastle.ac.uk, password: TestTest1234</br>
+    </p>
+</div>

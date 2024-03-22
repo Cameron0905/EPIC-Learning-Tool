@@ -1,0 +1,30 @@
+{
+  "name": "epic-learning-tool--csc2033",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://nucode.ncl.ac.uk/scomp/stage-2/csc2033-software-engineering-team-project/teams/Team-47/epic-learning-tool--csc2033.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "ssh2": "^0.8.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
